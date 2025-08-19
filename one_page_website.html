@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My One Page Website</title>
+<style>
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;           /* arrange items in a row */
+            gap: 20px;               /* spacing between links */
+        }
+
+        nav li {
+            display: inline;         /* keeps items inline */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007BFF;          /* highlight effect on hover */
+        }
+</style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Home Page Website</h1>
+        <p>This is the home section of my one-page website. You can navigate through the different sections.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Here are some sample images:</p>
+        <img src="https://th.bing.com/th/id/R.e264fecdff60c121d1d3246c402cd389?rik=mYcVkQoqm%2bZPdQ&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f30500000%2fblue-flowers-cynthia-selahblue-cynti19-30569028-1280-1024.jpg&ehk=6hV7ndM8TQo11%2fKGF6ioZhFbKkQ9KzcHK%2fBdReyis%2b4%3d&risl=&pid=ImgRaw&r=0" alt="Sample Image 1">
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Watch This Video</h2>
+        <p>Here is an embedded YouTube video:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 My One Page Website. Created by me.</p>
+    </footer>
+
+</body>
+</html>
